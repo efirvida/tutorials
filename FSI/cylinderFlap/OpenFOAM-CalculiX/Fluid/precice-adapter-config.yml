@@ -8,11 +8,13 @@ interfaces:
   patches:
   - flap
   write-data: Forces0
+  read-data: ""
 - mesh: Fluid-Mesh-Nodes
   locations: faceNodes
   patches:
   - flap
   read-data: Displacements0
+  write-data: ""
 
 FSIenabled: true
 
