@@ -25,7 +25,7 @@ solvers
         smoother         DICGaussSeidel;
     }
 
-    pFinal
+    "(p|pcorr)Final"
     {
         $p;
         relTol          0;
@@ -70,16 +70,16 @@ PIMPLE
 
     outerCorrectorResidualControl
     {
-	    U
-    	{
+        U
+        {
             tolerance       5e-5;
             relTol          0.1;
-    	}
+        }
         "(k|epsilon|omega)"
-    	{
+        {
             tolerance       5e-5;
             relTol          0.1;
-    	}
+        }
     }
 
 }
