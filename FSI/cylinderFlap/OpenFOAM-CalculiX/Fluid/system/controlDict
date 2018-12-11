@@ -14,7 +14,7 @@ FoamFile
     object      controlDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-    application         pimpleDyMFoam;
+    application         pimpleFoam;
     startFrom           latestTime;
     startTime           0;
     stopAt              endTime;
