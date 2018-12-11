@@ -64,17 +64,24 @@ PIMPLE
 
     residualControl
     {
+        p               5e-5;
+        U               5e-5;
+    }
+
+    outerCorrectorResidualControl
+    {
 	    U
     	{
-    		tolerance 5e-5;
-    		relTol	  0;
+            tolerance       5e-5;
+            relTol          0.1;
     	}
-	    p
+        "(k|epsilon|omega)"
     	{
-    		tolerance 5e-4;
-    		relTol	  0;
+            tolerance       5e-5;
+            relTol          0.1;
     	}
     }
+
 }
 
 potentialFlow
